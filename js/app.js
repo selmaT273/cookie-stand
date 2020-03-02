@@ -161,3 +161,42 @@ for (var l = 0; l < paris.hourlySales.length; l++){
 var printParisTotal = document.createElement('li');
 printParisTotal.textContent = 'Total: ' + totalParis;
 cookieUlParis.appendChild(printParisTotal);
+
+
+
+// LIMA!!!!!!
+
+var lima = {
+  minCust: 2,
+  maxCust: 16,
+  avgSale: 2.6,
+  hourlySales: [],
+  setCust: function(){
+    return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust);
+  },
+
+  salesPerHour: function(){
+    for (var i = 0; i < hours.length; i++){
+      console.log(i);
+      this.hourlySales[i] = Math.floor(this.setCust() * this.avgSale);
+    }
+  }
+};
+
+lima.salesPerHour();
+
+var cookieUlLima = document.getElementById('lima');
+
+var totalLima = 0;
+
+for (var m = 0; m < lima.hourlySales.length; m++){
+  var cookieLiLima = document.createElement('li');
+  cookieLiLima.textContent = hours[m] + ': ' + lima.hourlySales[m];
+  cookieUlLima.appendChild(cookieLiLima);
+  totalLima += lima.hourlySales[m];
+
+}
+
+var printLimaTotal = document.createElement('li');
+printLimaTotal.textContent = 'Total: ' + totalLima;
+cookieUlLima.appendChild(printLimaTotal);
