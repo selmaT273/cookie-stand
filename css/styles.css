@@ -1,0 +1,44 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#logo {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Amatic SC';
+    letter-spacing: 3px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Sacramento';
+    letter-spacing: 3px;
+}
+
+#Avg {
+    font-family: 'Amatic SC';
+    font-size: 24px;
+    text-decoration: bold;
+}
+
+ul {
+    text-align: center;
+    padding-top: 10px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 80px;
+}
+
+#cookieStores {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+    
+}
+
