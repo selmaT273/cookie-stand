@@ -15,7 +15,6 @@ var seattle = {
 
   salesPerHour: function(){
     for (var i = 0; i < hours.length; i++){
-      console.log(i);
       this.hourlySales[i] = Math.floor(this.setCust() * this.avgSale);
     }
   }
