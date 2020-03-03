@@ -19,12 +19,8 @@ var seattle = {
       this.hourlySales[i] = Math.floor(this.setCust() * this.avgSale);
     }
   }
-
-
-
 };
 
-// seattle.setCust();
 seattle.salesPerHour();
 
 

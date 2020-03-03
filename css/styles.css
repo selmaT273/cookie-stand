@@ -28,9 +28,17 @@ h2 {
 }
 
 ul {
+    text-align: center;
+    padding-top: 10px;
     float: left;
     margin-right: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-left: 80px;
+}
+
+#cookieStores {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+    
 }
 
