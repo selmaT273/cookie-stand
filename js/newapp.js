@@ -1,6 +1,7 @@
 'use strict';
 
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+var parentElement = document.getElementById('cookieStores');
 
 function Store (name, minCust, maxCust, avgSale) {
   this.name = name;
@@ -23,8 +24,6 @@ Store.prototype.getSalesPerHour = function(){
 };
 
 Store.prototype.render = function(){
-  var parentElement = document.getElementById('cookieStores');
-
   var storeRow = document.createElement('tr');
   parentElement.appendChild(storeRow);
 
@@ -53,3 +52,19 @@ for(var i = 0; i < storeData.length; i++){
   storeData[i].render();
 }
 
+var timeTotalRow = document.createElement('tr');
+parentElement.appendChild(timeTotalRow);
+
+var timeTotalData = document.createElement('td');
+timeTotalData.textContent = 'Hourly Totals';
+timeTotalRow.appendChild(timeTotalData);
+
+for(var k = 0; k < hours.length + 1; k++){
+  var timeTotalCell = document.createElement('td');
+  var hourlyTotal = 0;
+  for (var j = 0; j < storeData.length; j++){
+    hourlyTotal = hourlyTotal + storeData[j].hourlySales[k];
+  }
+  timeTotalCell.textContent = hourlyTotal;
+  timeTotalRow.appendChild(timeTotalCell);
+}
