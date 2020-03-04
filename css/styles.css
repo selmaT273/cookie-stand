@@ -23,7 +23,7 @@ h2 {
 
 #Avg {
     font-family: 'Amatic SC';
-    font-size: 24px;
+    font-size: 30px;
     text-decoration: bold;
 }
 
@@ -47,6 +47,12 @@ table {
     border: 1px solid black;
 }
 
+table > thead, tbody, th, td {
+    height: 30px;
+    width: 75px;
+    vertical-align: middle;
+    text-align: center;
+}
 td {
   border: 1px solid black;
 }
