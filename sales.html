@@ -78,7 +78,28 @@
         </ul> -->
         
     </section>
-    
+    <form id="new-store">
+        <fieldset>
+            <legend>Add a new store to the data table above</legend>
+            <label for="newName">Name</label>
+            <input id="newName" type="text" required/>
+            <br>
+            <br>
+            <label for="newMin">Min. Customers Per Hour</label>
+            <input id="newMin" type="number" step="0.01" min="0"/>
+            <br>
+            <br>
+            <label for="newMax">Max. Customers Per Hour</label>
+            <input id="newMax" type="number" step="0.01" min="0"/>
+            <br>
+            <br>
+            <label for="average">Average Cookie Sale Per Customer</label>
+            <input id="newAvg" type="number" step="0.01" min="0"/>
+        </fieldset>
+
+        <button type="reset" value="reset">Reset</button>
+        <button type="submit" name="submitAddNewStore" value="submit">Submit</button>
+    </form>
 
     <div id="cookieProduction-holder" class="cookieProductionDiv"></div>
     </main>

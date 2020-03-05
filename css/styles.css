@@ -141,3 +141,15 @@ th {
     text-align: center;
 
 }
+
+#new-store {
+    border: 1px solid black;
+    margin-right: 39px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#new-store fieldset {
+    margin: 10px;
+}

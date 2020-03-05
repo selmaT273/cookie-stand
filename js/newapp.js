@@ -68,3 +68,24 @@ for(var k = 0; k < hours.length + 1; k++){
   timeTotalCell.textContent = hourlyTotal;
   timeTotalRow.appendChild(timeTotalCell);
 }
+
+function handleFormSubmit(event){
+  event.preventDefault();
+  var nameInput = document.getElementById('newName');
+  var nameValue = nameInput['value'];
+  var minInput = document.getElementById('newMin');
+  var minValue = minInput['value'];
+  var maxInput = document.getElementById('newMax');
+  var maxValue = maxInput['value'];
+  var avgInput = document.getElementById('newAvg');
+  var avgValue = avgInput['value'];
+
+  var newStore = new Store(nameValue, minValue, maxValue, avgValue);
+
+
+  newStore.getSalesPerHour();
+  newStore.render();
+}
+
+var formElement = document.getElementById('new-store');
+formElement.addEventListener('submit', handleFormSubmit);
