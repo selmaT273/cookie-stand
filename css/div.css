@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+
+}
+
+header {
+    padding: 30px;
+    border: solid 10px lightblue;
+    background-color: white;
+/* use border box to make things line up! */
+}
+
+h1 {
+    text-align: center;
+    font-size 55px;
+}
+a {
+    padding: 12px;
+    background-color: #222;
+    color: #eee;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: navy;
+    padding: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* li {
+    float: right;
+/* inline block if we want the nav items to be have space between them */
+/* } */
+
+li {
+    display: inline-block;
+    margin: auto;
+
+}
+
+li:first-child { 
+    float: left;
+}
+li:last-child {
+    float: right;
+}
+nav a {
+    display: inline-block;
+    padding: 15px;
+    background: #ccc;
+    color: #333;
+}
+
+.float-me li {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+main {
+    margin: 20px;
+    background-color: lavender;
+    display: inline-block;
+    padding-bottom: 50px;
+    padding: 25px;
+    font-size: 20px;
+
+}
+
+footer {
+    background-color: azure;
+    position: fixed;
+    width: 20%;
+    bottom: 10px;
+    height: 18px;
+    
+}
