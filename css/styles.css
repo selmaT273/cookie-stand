@@ -15,6 +15,7 @@ h1 {
 }
 
 h2 {
+    margin-bottom: 10px;
     text-align: center;
     font-size: 36px;
     font-family: 'Sacramento';
@@ -22,18 +23,56 @@ h2 {
 }
 
 #Avg {
+    display: block;
     font-family: 'Amatic SC';
     font-size: 30px;
     text-decoration: bold;
 }
 
-ul {
+.main-ul {
+    background-color: whitesmoke;
+    padding: 0px;
+    list-style-type: none;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-ul li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Amatic SC';
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/* .main-ul li:first-child { 
+    float: left;
+}
+li:last-child {
+    float: right; */
+
+
+a {
+    text-decoration: none;
+    /* padding: 15px;
+    background: #ccc;
+    color: #333; */
+}
+
+/* .main-ul {
     text-align: center;
     padding-top: 10px;
     float: left;
     margin-right: 10px;
-    margin-left: 80px;
-}
+    margin-left: 30px;
+} */
 
 #cookieStores {
     margin-left: auto;
@@ -61,3 +100,44 @@ th {
   border: 1px solid black;
 }
 
+.store-info {
+  margin: 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  line-height: 20px;
+}
+
+#location-info {
+    text-align: center;
+}
+
+.store-info h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.images {
+    padding: 0px;
+    list-style-type: none;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.images li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Amatic SC';
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+}
