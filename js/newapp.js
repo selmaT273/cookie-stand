@@ -15,7 +15,7 @@ function Store (name, minCust, maxCust, avgSale) {
 Store.prototype.getSalesPerHour = function(){
   var total = 0;
   for (var i = 0; i < hours.length; i++){
-    var randomCust = Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust);
+    var randomCust = Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
     var atHourSales = Math.floor(randomCust * this.avgSale);
     this.hourlySales[i] = atHourSales;
     total = total + atHourSales;

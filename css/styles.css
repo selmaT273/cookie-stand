@@ -22,21 +22,22 @@ h2 {
     letter-spacing: 3px;
 }
 
-#Avg {
+#avg {
     display: block;
     font-family: 'Amatic SC';
     font-size: 30px;
     text-decoration: bold;
+    margin-left: 3%;
 }
 
 .main-ul {
     background-color: whitesmoke;
-    padding: 0px;
+    padding: 10px;
     list-style-type: none;
     clear: both;
     overflow: hidden;
     text-align: center;
-    width: 90%;
+    width: 94%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -61,6 +62,7 @@ li:last-child {
 
 a {
     text-decoration: none;
+    color: #888888;
     /* padding: 15px;
     background: #ccc;
     color: #333; */
@@ -77,8 +79,7 @@ a {
 #cookieStores {
     margin-left: auto;
     margin-right: auto;
-    width: 90%
-    
+    width: 90%;
 }
 
 table {
@@ -140,4 +141,43 @@ th {
     font-size: 20px;
     text-align: center;
 
+}
+
+#new-store {
+    border: 1px solid black;   
+    width: 50%;
+    margin: 0 auto;
+}
+
+#cookieStoreHolder {
+    margin-bottom: 2%;
+}
+
+fieldset {
+    text-align: center;
+}
+
+legend {
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 2%
+}
+
+button {
+    background-color: white;
+    border: 1px black solid;
+    box-shadow: 3px 4px 6px #888888;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.submit{
+    position: relative;
+    left: 45%
+}
+
+.reset {
+    position: relative;
+    left: 42%;
 }
